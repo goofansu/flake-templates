@@ -8,7 +8,16 @@ nix registry add goofansu/templates git+https://codeberg.org/goofansu/nix-templa
 
 ## Usage
 
+In your project, init Nix flakes template with the command:
+
+- Default template
+
 ```shell
-mkdir proj
-nix flake new -t goofansu/templates#direnv proj
+nix flake init -t goofansu/templates
+```
+
+- Specific template
+
+```shell
+nix flake init -t goofansu/templates#rails_postgres
 ```
