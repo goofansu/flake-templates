@@ -3,7 +3,7 @@
 ## Install
 
 ```shell
-nix registry add goofansu/templates git+https://codeberg.org/goofansu/nix-templates
+nix registry add goofansu/templates git+https://git.sr.ht/~goofansu/nix-templates
 ```
 
 ## Usage
