@@ -12,6 +12,11 @@
         description =
           "A devenv template for developing Rails + PostgreSQL application";
       };
+      rails_mysql = {
+        path = ./rails_mysql;
+        description =
+          "A devenv template for developing Rails + MySQL application";
+      };
     };
 
     defaultTemplate = self.templates.direnv;
