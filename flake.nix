@@ -1,24 +1,16 @@
 {
-  description = "A collection of flake templates";
+  description = "My flake templates";
 
   outputs = { self }: {
     templates = {
-      direnv = {
-        path = ./direnv;
-        description = "A direnv template using the latest stable nixpkgs";
+      rails-postgres = {
+        path = ./rails-postgres;
+        description = "Rails devenv with PostgreSQL";
       };
-      rails_postgres = {
-        path = ./rails_postgres;
-        description =
-          "A devenv template for developing Rails + PostgreSQL application";
-      };
-      rails_mysql = {
-        path = ./rails_mysql;
-        description =
-          "A devenv template for developing Rails + MySQL application";
+      rails-mysql = {
+        path = ./rails-mysql;
+        description = "Rails devenv with MySQL";
       };
     };
-
-    defaultTemplate = self.templates.direnv;
   };
 }
