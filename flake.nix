@@ -5,11 +5,11 @@
     templates = {
       rails-postgres = {
         path = ./rails-postgres;
-        description = "Rails devenv with PostgreSQL";
+        description = "Rails development environment with PostgreSQL";
       };
       rails-mysql = {
         path = ./rails-mysql;
-        description = "Rails devenv with MySQL";
+        description = "Rails development environment with MySQL";
       };
     };
   };
