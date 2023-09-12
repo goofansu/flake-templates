@@ -1,7 +1,7 @@
-# flake-templates
+# nix-templates
 
 ## Usage
 
 ```shell
-nix flake init -t sourcehut:~goofansu/flake-templates#<template>
+nix flake init -t sourcehut:~goofansu/nix-templates#<template>
 ```
