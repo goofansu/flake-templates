@@ -23,6 +23,7 @@
               packages = [
                 ruby_3_2
                 zstd # native compile mysql2 gem
+                libyaml # required to native compile psych gem
               ];
 
               services.redis.enable = true;
