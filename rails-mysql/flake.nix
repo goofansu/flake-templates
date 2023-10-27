@@ -20,7 +20,10 @@
           default = devenv.lib.mkShell {
             inherit inputs pkgs;
             modules = with pkgs; [{
-              packages = [ ruby_3_2 ];
+              packages = [
+                ruby_3_2
+                zstd # native compile mysql2 gem
+              ];
 
               services.redis.enable = true;
               services.mysql = {
