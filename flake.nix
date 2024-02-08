@@ -11,6 +11,10 @@
         path = ./rails-mysql;
         description = "Rails development environment with MySQL";
       };
+      hugo-basic = {
+        path = ./hugo-basic;
+        description = "Hugo development environment";
+      };
     };
   };
 }
