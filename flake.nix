@@ -15,6 +15,10 @@
         path = ./hugo-basic;
         description = "Hugo development environment";
       };
+      hugo-modus = {
+        path = ./hugo-modus;
+        description = "Hugo development environment with hugo-modus theme";
+      };
     };
   };
 }
