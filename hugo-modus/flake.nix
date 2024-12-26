@@ -3,14 +3,23 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.hugo-modus = {
-    url = "sourcehut:~goofansu/hugo-modus";
+    url = "github:goofansu/hugo-modus";
     flake = false;
   };
 
-  outputs = { self, nixpkgs, flake-utils, hugo-modus }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let pkgs = nixpkgs.legacyPackages.${system};
-      in {
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      hugo-modus,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+      in
+      {
         packages.website = pkgs.stdenv.mkDerivation {
           name = "blog";
           src = self;
@@ -23,7 +32,8 @@
         };
 
         defaultPackage = self.packages.${system}.website;
-        devShells.default = with pkgs;
+        devShells.default =
+          with pkgs;
           mkShell {
             packages = [ hugo ];
             shellHook = ''
@@ -33,5 +43,6 @@
               fi
             '';
           };
-      });
+      }
+    );
 }

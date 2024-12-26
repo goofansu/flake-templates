@@ -3,5 +3,5 @@
 ## Usage
 
 ```shell
-nix flake init -t sourcehut:~goofansu/flake-templates#<template>
+nix flake init -t github:goofansu/flake-templates#<template>
 ```

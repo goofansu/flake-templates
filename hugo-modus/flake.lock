@@ -21,17 +21,17 @@
     "hugo-modus": {
       "flake": false,
       "locked": {
-        "lastModified": 1708178052,
-        "narHash": "sha256-bPQE6F06D5AEEkbM3ui34OLsKbYd7hxemzTWkiAb9NE=",
-        "owner": "~goofansu",
+        "lastModified": 1708614459,
+        "narHash": "sha256-Kgjvmznz+lu7BI/4ZxNPhEa7dE/eF2sgSgPZ+WJrpMA=",
+        "owner": "goofansu",
         "repo": "hugo-modus",
-        "rev": "8ea726172e662e49f6094de54e8164cc2322a68e",
-        "type": "sourcehut"
+        "rev": "a7f1eb0d248da2aab437f812f92d6bf1cf206899",
+        "type": "github"
       },
       "original": {
-        "owner": "~goofansu",
+        "owner": "goofansu",
         "repo": "hugo-modus",
-        "type": "sourcehut"
+        "type": "github"
       }
     },
     "nixpkgs": {
